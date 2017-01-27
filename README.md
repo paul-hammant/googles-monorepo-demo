@@ -11,16 +11,23 @@ Maven and Monorepo hacking in the style of Google's Blaze Monorepo. Refs:
 
 # Doing a 'quick' experiment with this repo/branch
 
+Initial setup:
+
+```
+git clone git@github.com:paul-hammant/googles-monorepo-demo.git
+cd googles-monorepo-demo
+```
+
 To run the experiment:
 
 ```
-git clone git@github.com:paul-hammant/maven-monorepo-experiment.git --no-checkout
-cd maven-monorepo-experiment
 git config core.sparsecheckout true
-echo '/*' > .git/info/sparse-checkout
-echo '!samples' >> .git/info/sparse-checkout
-git checkout trick-maven-monorepo
-find . -name "pom-template.xml" | python writepom.py
+echo '/mr' > .git/info/sparse-checkout
+echo '/README.md' >> .git/info/sparse-checkout
+echo '/pom*' >> .git/info/sparse-checkout
+echo '/guava' >> .git/info/sparse-checkout
+echo '/guava-testlib' >> .git/info/sparse-checkout
+mr/checkout.sh
 mvn install
 ```
 
