@@ -46,4 +46,6 @@ In your repo, all pom.xml files need to be renamed to pom-template.xml:
 find . -name pom.xml -type f | while read a; do n=$(echo $a | sed -e 's/pom.xml/pom-template.xml/'); git mv $a $n; done
 ```
 
-You'll need to checkin the `mr` directory we have above.
+You'll need to checkin the `mr` directory we have above. You'll also want to
+add `pom.xml` to `.gitignore` - they're not under source control any more,
+`pom-template.xml` is instead.
