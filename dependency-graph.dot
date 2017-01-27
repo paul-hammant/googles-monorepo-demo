@@ -1,0 +1,23 @@
+digraph "guava-parent" {
+  node [shape="box",style="rounded",fontname="Helvetica",fontsize="14"]
+  edge [fontsize="10",fontname="Helvetica"]
+
+  // Node Definitions:
+  "com.google.guava:guava-gwt:jar::compile"[label=<guava-gwt>]
+  "com.google.guava:guava:jar::compile"[label=<guava>]
+  "com.google.guava:guava-testlib:jar::test"[label=<guava-testlib<font point-size="10"><br/>(test)</font>>]
+  "com.google.guava:guava-testlib:jar:tests:test"[label=<guava-testlib<font point-size="10"><br/>(test)</font>>]
+  "com.google.guava:guava-tests:jar:tests:test"[label=<guava-tests<font point-size="10"><br/>(test)</font>>]
+  "com.google.guava:guava-testlib:jar::compile"[label=<guava-testlib>]
+  "com.google.guava:guava-tests:jar::compile"[label=<guava-tests>]
+  "com.google.guava:guava:jar::test"[label=<guava<font point-size="10"><br/>(test)</font>>]
+
+  // Edge Definitions:
+  "com.google.guava:guava-gwt:jar::compile" -> "com.google.guava:guava:jar::compile"
+  "com.google.guava:guava-gwt:jar::compile" -> "com.google.guava:guava-testlib:jar::test"
+  "com.google.guava:guava-gwt:jar::compile" -> "com.google.guava:guava-testlib:jar:tests:test"
+  "com.google.guava:guava-gwt:jar::compile" -> "com.google.guava:guava-tests:jar:tests:test"
+  "com.google.guava:guava-testlib:jar::compile" -> "com.google.guava:guava:jar::compile"
+  "com.google.guava:guava-tests:jar::compile" -> "com.google.guava:guava-testlib:jar::test"
+  "com.google.guava:guava-testlib:jar::test" -> "com.google.guava:guava:jar::test"
+}
