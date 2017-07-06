@@ -12,6 +12,7 @@ Google uses Blaze internally (which wasopen sourced as Bazel - with the expand/c
 * On the piece left out of Bazel: [Turning Bazel back into Blaze for monorepo nirvana](http://paulhammant.com/2015/05/20/turning-bazel-back-into-blaze-for-monorepo-nirvana/)
 * A **bigger** (more convincing) version of this demo: [Further Experiments With Expanding/Contracting Monorepos](https://paulhammant.com/2017/02/08/further-experiments-with-expanding-contracting-monorepos/) (2017)
 * The monorepos page on the site I put together with friends: [trunkbaseddevelopment.com/monorepos/](https://trunkbaseddevelopment.com/monorepos/)
+* Same site, but the **expandable/contractable** page: [trunkbaseddevelopment.com/expanding-contracting-monorepos](https://trunkbaseddevelopment.com/expanding-contracting-monorepos/)
 
 # Doing a 'quick' experiment with this repo/branch
 
