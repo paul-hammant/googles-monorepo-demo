@@ -1,16 +1,17 @@
-# This repository
+# Demo of a expanding/contracting monorepo for mortals
 
 This repo is a fork of https://github.com/google/guava - with no intention of
-merging back. This is about demonstrating how Google uses a "sparse checkout"
+merging back. This is about demonstrating how Google uses a "sparse checkout" (Git and Subversion language)
 with their gigantic Monorepo (86TB of history, 9 million unique files).
 
-Guava uses Maven - which is the point. Google uses Blaze internally (which was
-open sourced as Bazel).
+Guava uses Maven - which is why I chose it. (you can do expanding/contracting monorepos with Maven too). 
+Google uses Blaze internally (which wasopen sourced as Bazel - with the expand/contract feature missing).
 
-Refs:
-[1](https://trunkbaseddevelopment.com/monorepos/)
-[2](http://paulhammant.com/2014/01/06/googlers-subset-their-trunk/)
-[3](http://paulhammant.com/2015/05/20/turning-bazel-back-into-blaze-for-monorepo-nirvana/)
+* Main blog entry, documenting this: [Maven In A Google Style Monorepo](https://paulhammant.com/2017/01/27/maven-in-a-google-style-monorepo/) (2017)
+* Google knowhow for the edification of the masses [Googlers Subset their Trunk](http://paulhammant.com/2014/01/06/googlers-subset-their-trunk/) (2014)
+* On the piece left out of Bazel: [Turning Bazel back into Blaze for monorepo nirvana](http://paulhammant.com/2015/05/20/turning-bazel-back-into-blaze-for-monorepo-nirvana/)
+* A **bigger** (more convincing) version of this demo: [Further Experiments With Expanding/Contracting Monorepos](https://paulhammant.com/2017/02/08/further-experiments-with-expanding-contracting-monorepos/)
+* The monorepos page on the site I put together with friends: [trunkbaseddevelopment.com/monorepos/](https://trunkbaseddevelopment.com/monorepos/)
 
 # Doing a 'quick' experiment with this repo/branch
 
