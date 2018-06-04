@@ -16,6 +16,8 @@ Google uses Blaze internally (which wasopen sourced as Bazel - with the expand/c
 
 # Doing a 'quick' experiment with this repo/branch
 
+Say that you goal is to only build/test 'guava-testlib' and not any of the other sub-modules that Maven were to recurse to by habit if run from the root level:
+
 Initial setup:
 
 ```
