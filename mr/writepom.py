@@ -5,7 +5,7 @@ for pom_template in sys.stdin:
     dirname = os.path.dirname(pom_template)
     with open(pom_template) as f:
         if os.path.exists(dirname + '/pom.xml'):
-            os.chmod(dirname + '/pom.xml', 0755)
+            os.chmod(dirname + '/pom.xml', 0o755)
         with open(dirname + '/pom.xml', 'w') as the_pom:
             lines = f.readlines()
             for line in lines:
@@ -17,4 +17,4 @@ for pom_template in sys.stdin:
                         the_pom.write(line)
                 else:
                     the_pom.write(line)
-        os.chmod(dirname + '/pom.xml', 0444)
+        os.chmod(dirname + '/pom.xml', 0o444)
