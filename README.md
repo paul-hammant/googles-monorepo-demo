@@ -5,7 +5,7 @@ merging back. This is about demonstrating how Google uses a "sparse checkout" (G
 with their gigantic Monorepo (86TB of history, 9 million unique files).
 
 Guava uses Maven - which is why I chose it. (you can do expanding/contracting monorepos with Maven too). 
-Google uses Blaze internally (which wasopen sourced as Bazel - with the expand/contract feature missing).
+Google uses Blaze internally (which was open sourced as Bazel - with the expand/contract feature missing).
 
 * Main blog entry, documenting this: [Maven In A Google Style Monorepo](https://paulhammant.com/2017/01/27/maven-in-a-google-style-monorepo/) (2017)
 * Google knowhow for the edification of the masses [Googlers Subset their Trunk](http://paulhammant.com/2014/01/06/googlers-subset-their-trunk/) (2014)
